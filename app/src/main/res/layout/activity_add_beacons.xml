@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBeaconsActivity">
+
+    <Button
+        android:id="@+id/add_beacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="109dp"
+        android:text="ADD BEACONS"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="448dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/uuid_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UUID"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/major_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Major"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/minor_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Minor"
+            android:textAlignment="center" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_marginHorizontal="24dp"
+        android:id="@+id/header_divider"
+        android:layout_below="@+id/headerLayout"/>
+
+    <LinearLayout
+        android:id="@+id/scanned_beacons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_divider">
+
+        <ListView
+            android:id="@+id/scanned_beacons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp" />
+    </LinearLayout>
+
+</RelativeLayout>

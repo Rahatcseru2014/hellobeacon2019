@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="scanned_uuid" type="id" />
+    <item name="scanned_major" type="id" />
+    <item name="scanned_minor" type="id" />
+</resources>
